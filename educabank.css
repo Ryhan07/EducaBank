@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none; /* none e = desabilitar */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {   /* Chamei a tag "header" para estilização da cor do plano e medidas */
+    /*background-color: #572d0a; /* cor de fundo do cabeçalho cinza*/
+    
+    background-image: url(imagens/Banner\ movimento\ banco\ panda.gif);
+    background-size: 100% auto;      /* mantem a largura em 100% original, mantendo a altura automática */
+    background-repeat: no-repeat;   /* Evita que a imagem se repita */
+    padding: 100px;                 /* ajustando a largura da imagem */
+    
+
+
+}
+
+
+.menu-header {
+   display: flex;
+   justify-content: flex-end; /* Alinhando o conteúdo ao final do header (à direita) */
+   margin-top:-50px;          /* Move o menu 20 pixels para baixo */
+   margin-right: -80px;       /* Move o menu -80 pixels para a direita */
+   flex-wrap: wrap;
+   
+}
+
+header > h3 {
+    color: #4b4d45bb;
+    font-size: 70px;  /* Tamanho das palavras no header */
+    margin-top: 50px; /* Move o menu 20 pixels para baixo */
+    margin-right: 50px; /* Move o menu 20 pixels para a direita */
+}
+
+
+
+/* Aqui e o menu; Abrir conta / politica de privacidade / acesse sua conta */
+.menu-header > li > a {   /* Chamei a tag "li dentro do header" para estilização */
+    color: rgb(122, 62, 6);  /* cor das palavras no header */
+    text-decoration: none; /* desabilita, retira a linha sublinhada das palavras no header  */
+    font-size: 15px;  /* Tamanho das palavras no header */
+    margin-right: 15px; /* Move o menu 20 pixels para a direita */
+    font-weight: bold; /* Torna a fonte do texto em negrito (mais espessa) */
+   
+}
+
+
+/* Aqui efeito no menu; Abrir conta / politica de privacidade / acesse sua conta */
+.menu-header > li > a:hover {      /* Aqui, usei o hover para mudar a cor das letras ao passar o mouse */
+    color: rgb(128, 37, 14);      /* Muda a cor de braco para azul ao passar o mouse */
+    font-size: 18px;               /*Esse faz o efeito de almentar as fontes */
+    transition: 0.9s;              /* tempo de transição para o efeito de mudar de cor */
+}
+
+
+.menu-header > li {       /* Chamei a tag "a" para estilização */
+    margin-left: -8px;    /* Margem a esquerda para espaçamento entre as palavras do hader */
+    
+}
+
+#sessao {                                                                            /* Chamei a tag "sessao" para estilização */
+    padding: 5rem;                                                                  /* 1 rem equivale a 16px e cada 1em = 8px*/
+    /* background-color: aquamarine; */
+    background: linear-gradient(180deg, #ece4b9 8.33%, rgb(171, 161, 18) 100%); /* Aqui e as configurações da cor do degradee e rotatividade do mesmo */
+}
+
+#sessao > h1 {           /* Chamei a tag "h1" dentro do identificador sessao para estilização */
+    font-size: 45px;   /* Tamanho da letra do h1*/
+    color: #572d0a;  /* dei essa cor para a fonte */
+}
+
+#sessao >p {                           /* Chamei a tag "p" dentro do identificador sessao para estilização */
+    font-size: 40px;                   /* Dei um Tamanho para o paragrafo */
+}
+ #sessao > button {                    /* Aqui Chamei a tag "button que está dentro da sessão" para estilização */
+    padding: 7px;                     /* Ajustei a espeçura do botão */
+    width: 20rem;                      /* Ajustei o cumprimento do botão */
+    font-size: 20px;                   /* Tamanho da letra do h1*/
+    border-radius: 50px;               /* Arredonda as bordas do botão */
+    color: rgb(125, 125, 10);        /* Dei essa cor para a fonte dentro do button */
+    border-color: rgb(72, 67, 8); /* mudei a cor das bordas do botão*/
+    margin: 30px;
+ }
+
+ #sessao > button:hover {                   /* Aqui Chamei o "button que está dentro do id sessão" para estilização */
+    background-color: rgb(53, 42, 10);  /* cor do fundo da section */
+    color: white;                         /* cor da fonte do button */
+    border-color: white;                  /* cor da borda do button */
+    transition: 0.8s;                       /* aqui dei uma suavização ao passar de uma cor para outra do botão */
+ }
+
+ #app {                              /* Chamei o id"app que pertence a segunda sessão" para estilização */
+    padding: 20vh;                   /* Preenchimento da section */
+    background-color: #645810;     /* cor do fundo da section */
+    display: flex;                   /* jogando os itens lado a lado */
+    justify-content: space-between;  /* justificando o conteudo inicial ao final */
+    flex-wrap: wrap;                 /* Adapitando a sessão para quebrar em tela menores */
+
+ }
+
+ #app > div > a > button {                   /* Aqui Chamei a tag "button que está dentro da div que pertence a segunda sessão" para estilização */
+    padding: 7px;                       /* Espeçura do botão */
+    border-radius: 50px;                 /* Arredondamento das bordas */
+    width: 20rem;                         /* Ajustei a largura do botão */
+    color: rgb(125, 125, 10);        /* Dei essa cor para a fonte dentro do button */
+    border-color: rgb(72, 67, 8); /* mudei a cor das bordas do botão*/
+    margin: 30px;                        /* Alteração das margens em volta do botão */
+    font-size: 20px;                     /* Tamanho da letra que esta dentro  do botão */
+ }
+
+ #app > div > p {      /* Chamei a tag "p que esta dentro da div e dentro do app " para estilização */
+    font-size: 45px;   /* Dei um tamanho de 35px */
+    color: white;    /* Dei cor a fonte do paragrafo */
+
+ }
+
+ #app > div > a > button:hover {              /* Aqui Chamei a tag "button que está dentro da div que pertence a segunda sessão" para estilização  com efeito hover */
+    background-color: rgb(53, 42, 10);  /* Aqui e a cor do botão ao passar o mouse */
+    color: white;                       /* Cor da letra no centro do botão ao passar o mouse */
+    border-color: white;                /* Cor da borda do botão ao passar o mouse */
+    transition: 0.8s;                     /* aqui dei uma suavização ao passar de uma cor para outra do botão */
+ }
+
+ #app > div > img {     /* Chamei a tag "img dentro da div e dentro do app " para estilização */
+    width: 30vw;        /* Largura da imagem */
+    height: 65vh;       /* Altura da imagem usando o Viewsport */
+    margin-top: -75px;  /* Espaçamento da margim superior */
+ }
+
+ #container {                    /* Chamei a tag "container" para estilização */
+   
+    padding: 25vh;               /* Aqui dei a espeçura do container */
+    background-color:#807113;  /* Aqui dei a cor ao fundo do container */
+    flex-wrap: wrap;             /* Adapitando a sessão para quebrar em tela menores */
+
+ }
+
+ #container > h2 {                      /* Chamei a tag "he dentro do container" para estilização */
+    font-size: 40px;                    /* Atribui o tamanho da letra */
+    margin-top: -10rem;                 /* Espaçamento superior usando (-) */
+    color: rgba(146, 120, 48, 0.925); /* Cor da letra */
+    text-align:center;                  /* Alinhamento do titulo */
+ }
+
+ #container >.text1 {                   /* Chamei a tag "container" para estilização */
+    font-size: 20px;               /* Tamanho da letra */
+    margin-top: -100px;              /* Espaçamento superior */
+    color: rgba(0, 0, 0, 0.979); /* Cor da letra */
+    text-align: center;      /* Alinhei o texto ao centro */
+ }
+
+ #container >  p {       /* Chamei a "class .text que esta dentro do container" para estilização */
+   text-align: justify;           /* Tornando o texto justificavel */
+ }
+
+ /* Botão CONHEÇA O PROJETO PANDA PARA CRIANÇAS */
+ #container > a > button {             /* Chamei o Button dentro do "container" para estilização */
+    font-size: 20px;                   /* Tamanho da letra que esta dentro  do botão */
+    padding: 10px;                     /* Espeçura do botão */
+    width: 45vw;                       /* Ajustei a largura do botão */
+    border-radius: 50px;               /* Arredondamento das bordas */
+    color: rgb(61, 46, 17);          /* Ajustei a cor da letra */
+    border-color: rgb(80, 51, 7);   /* cor das bordas do botão */
+    margin: 80px;                  /* Centraliza horizontalmente (auto) e define a margem superior e inferior como 60px */
+   
+    
+                
+}
+
+.line {
+   text-align: center;      /* Alinhei o texto ao centro */
+ 
+}
+/* Aqui e a area das logomarcas patrocinadoras */
+.patriocinio {                  /* Chamei a class "patriocinio" para estilização */
+   padding: 15vh;               /* Aqui dei a espeçura do container */
+   background-color:#f5f4ee;  /* Aqui dei a cor ao fundo do container */
+   flex-wrap: wrap;             /* Adapitando a sessão para quebrar em tela menores */
+   display: flex;               /* jogando os itens lado a lado */
+   justify-content: center;     /* Centraliza horizontalmente */
+   align-items: center;         /* Centraliza verticalmente */
+             
+
+}
+
+
+    
+#container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+
+ #container > a > button:hover {                  /* Aqui Chamei a tag "button que está dentro da div que pertence a segunda sessão" para estilização  com efeito hover */
+    background-color: rgba(97, 91, 4, 0.925); /* Aqui e a cor do botão ao passar o mouse */
+    color: white;                           /* Cor da letra no centro do botão ao passar o mouse */
+    border-color: white;                    /* Cor da borda do botão ao passar o mouse */
+    transition: 0.8s;                         /* aqui dei uma suavização ao passar de uma cor para outra do botão */
+    
+ }
+
+
+ #container > img {      /* Chamei a tag "img" da section para estilização */
+    width: 50vw;         /* Largura da imagem */
+    margin-top: 30px;    /* Distancia da margem superior */
+    margin-left: 10vw;   /* Distancia da margem esquerda */
+ }
+
+ #container-cofre {                                            /* Chamei o "container-cofre" para estilização */
+   background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101,0.745 )100%), url(imagens/crianças\ instituição.jpg);  /* Aqui busquei a imagem na pasta de imagem e uso a tag "linear-gradient"e seus parametros para jogar um filtro degreadee na frente da imagem */
+   background-position: center;                                /* Aqui estou posicionando a mensagem */
+   background-attachment: fixed;                               /* Aqui deixei a imagem fixada de fundo */
+   height: 50rem;                                              /* Altura da imagem */
+   display: flex;                                              /* jogando os itens lado a lado */
+   align-items: center;                                        /* Aqui alinha a imagem ao centro */
+   flex-wrap: wrap;                                            /* Adapitando a sessão para quebrar em tela menores */
+ }
+
+ #container-cofre > div > img {    /* Chamei o "img dentro do container-cofre" para estilização */
+   width: 19vw;                    /* Largura da imagem */
+   margin-left: 20rem;             /* Dei uma distancia de margem a esquerda */
+   margin-top: 8rem;               /* Dei uma distancia de margem no topo do texto */
+   flex-wrap: wrap;                /* Adapitando a sessão para quebrar em tela menores */
+
+ }
+
+ #container-cofre > div > h2 {    /* Chamei o " h2 que esta dentro da viv e do container-cofre" para estilização */
+   color: white;                /* Dei uma cor branca para a fonte */
+   font-size: 35px;               /* Dei um tamanho para h2 de 35px*/
+   margin-left: 9rem;             /* Dei uma distancia de margem a esquerda */
+ }
+
+ #container-cofre > div > p {  /* Chamei o " p que esta dentro da viv e do container-cofre" para estilização */
+   color: white;             /* Dei uma cor branca para a fonte */
+   font-size: 20px;            /* Dei um tamanho para h2 de 20px*/
+   margin-left: 9rem;          /* Dei uma distancia de margem a esquerda */
+   margin-top: 2rem;           /* Dei uma distancia de margem no topo do texto */
+ }
+
+ footer {                               /* Chamei o footer para stilização */
+   padding: 13vw;                       /* Largura da imagem*/
+   background-color: rgb(10, 10, 10); /* Cor do fundo*/
+   text-align: center;                  /* Alinhamento do texto ao centro */
+ }
+
+ footer> img {        /* Chamei o img dentro do footer para stilização */
+   width: 30rem;      /* Largura da imagem */
+   height: 7rem;      /* Altura da imagem */
+   margin-top: -5rem; /* espaçamento superior usando (-) */
+
+ }
+
+ .item-footer {                     /* Chamei a class item-footer para stilização */
+   color: rgb(41, 40, 40);        /* Dei uma cor cinza para a fonte */
+   display: flex;                    /* jogando os itens lado a lado */
+   justify-content: space-between;  /* justificando o conteudo inicial ao final */
+   margin-top: 15px;
+ }
+
+ .item-footer > a {             /* Chamei o "a" dentro da class item-footer para stilização */
+   color: rgb(63, 63, 63);    /* Dei uma cor cinza para a fonte */
+   text-decoration: none;       /* desabilita, retira a linha sublinhada das palavras no header  */
+   font-size: 20px;             /* Dei um tamanho para as fontes */
+ }
+
+ .item-footer > a:hover {       /* Chamei o "a" dentro da class item-footer para stilização com efeito ao passar o mouse*/
+   color: blue;               /* Quando passar o mouse ficara nesse tom de azul */
+   transition: 0.8s;            /* Ao passar o mouse sera suavizado a transição em 8 segundos */
+ }
+
+
+
+
+ 
+
+
